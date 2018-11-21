@@ -1,0 +1,76 @@
+/* Extra small devices (phones, 600px and down) */
+/* Since this is a mobile-first webpage we don't need this mdeia query */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+  body {
+    background: url("https://images.pexels.com/photos/516114/pexels-photo-516114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat fixed center;
+    background-size: cover;
+  }
+
+  /* ===== Navbar ===== */
+  .fa-bars {
+    cursor: pointer;
+  }
+
+  /* ===== Main Links ===== */
+  .nav-item > a:hover {
+    color: #e86824;
+  }
+
+  /* ===== Main ===== */
+  main {
+    padding: 40px 1em 30px 1em;
+    margin: 0;
+    background: rgba(250, 250, 250, 0.5);
+  }
+
+  .imgString {
+    max-width: 480px;
+    margin: auto auto 30px auto;
+  }
+
+  .imgString > p {
+    background: #fff;
+  }
+
+  /* ===== Contact Page ===== */
+  .bubble {
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+  
+  .address, .phoneMail {
+    justify-content: space-around;
+    color: #fff;
+  }
+
+  .address {
+    padding-bottom: 10px; 
+  }
+
+  .oTT > tbody > tr > td, .oTT > tbody > tr > th, .bubble > div > p, .bubble > div > a > p, .fas, .fa-clock {
+    color: #000;
+  }
+  
+  .booking {
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .booking:hover {
+    background: rgba(250, 250, 250, 0.5);
+    color: #e86824;
+  }
+
+  
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...}  */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

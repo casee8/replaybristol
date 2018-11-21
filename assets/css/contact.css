@@ -1,0 +1,78 @@
+* {
+  color: #e86824;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ===== The Whole Container ===== */
+.content {
+  margin-top: 50px;
+}
+
+.bold {
+  font-weight: 700;
+  text-align: center;
+  margin: 10px;
+}
+
+.address {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.map > img {
+  max-height: 100px;
+}
+
+.phoneMail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phone > p {
+  margin: auto auto 5px 5px;
+}
+
+.booking {
+  border: 1px solid #e86824;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  padding: 3px 8px;
+  margin: auto 5px auto auto;
+  font-weight: 700;
+}
+
+.bubble {
+  border: 1px solid #e86824;
+  background: rgba(232, 104, 36, 0.1);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  margin: 15px auto;
+  background: rgba(232, 104, 36, 0.1);
+  width: 100%;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td, th {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 15px;
+}
+
+th {
+  text-align: center;
+}
+
+body > main > div > table > tbody > tr:nth-child(2) > td:nth-child(1), body > main > div > table > tbody > tr:nth-child(2) > td:nth-child(2) {
+  background: #ccc;
+}
+
+body > main > div > table > tbody > tr:nth-child(8) > td:nth-child(1), body > main > div > table > tbody > tr:nth-child(8) > td:nth-child(2) {
+  border-bottom: none;
+}

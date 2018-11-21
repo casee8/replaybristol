@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+h1 {
+  padding-top: 30px;
+}
+
+table {
+  background: url('../media/board2.jpg') no-repeat center;
+  background-size: cover;
+  margin: 10px auto 30px auto;
+  border-spacing: 0;
+  color: #fff;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+td {
+  padding: 10px 5px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.2em;
+}
+
+th {
+  padding: 10px 5px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.4em;
+}
+
