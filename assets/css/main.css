@@ -29,12 +29,12 @@ nav {
 .fa-bars {
   font-size: 1.2em;
   margin: 10px;
-  color: #e86824;
+  color: #e86824 !important;
 }
 
 /* Image */
 body > header > nav > div.mainImg > a > img {
-  width: 40px;
+  max-height: 40px;
   margin: 5px auto auto 5px;
 }
 
@@ -79,67 +79,108 @@ body > header > nav > div.mainImg > a > img {
   margin: 5px auto;
 }
 
-main {
-  padding-top: 30px;
-  margin: auto 15px;
+.selected {
+  color: #e86824;
 }
 
-hr {
-  border: 1px solid #e86824;
-  max-width: 90%;
-  margin: auto;
+/* ===== Main ===== */
+main {
+  padding-top: 50px;
+  margin: auto 15px;
 }
 
 /* ===== Footer ===== */
 footer {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   width: 100%;
   background: #32353B;
 }
 
 .footer-string {
-  color: #fff !important;
+  color: #fff;
   font-size: 0.8em;
   text-decoration: none;
 }
 
 .footer-image {
   grid-column-start: 1;
-  grid-column-end: 6;
-  border-bottom: 1px solid #e86824;
+  grid-column-end: 2;
 }
 
 .footer-image > img {
-  max-width: 300px;
+  max-width: 50px;
+  margin: 5px auto auto 12px;
 }
 
 .follow-us {
-  grid-column-start: 1;
-  grid-column-end: 6;
-  margin: 5px auto auto 5px;
-}
-
-.logos {
-  grid-column-start: 1;
-  grid-column-end: 6;
-  margin-left: 5px;
-}
-
-.logos > a {
-  margin-left: 5px;
-  font-size: 1.4em;
-}
-
-.cookie-privacy {
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-column-end: 4;
   margin: 5px auto auto 5px;
 }
 
+.logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logos > a {
+  font-size: 1.5em;
+}
+
+.footer-hr {
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+
+.privacy {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 5px auto auto 5px;
+}
+
+.privacy > p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
 .copyright {
   grid-column-start: 1;
-  grid-column-end: 6;
-  margin: 5px;
+  grid-column-end: 9;
+  margin: 10px;
   text-align: center;
 }
+
+/* ==================== Media Queries ==================== */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background: url("https://images.pexels.com/photos/516114/pexels-photo-516114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat fixed center;
+    background-size: cover;
+  }
+
+  /* ===== Navbar ===== */
+  .fa-bars {
+    cursor: pointer;
+  }
+
+  /* ===== Main Links ===== */
+  .nav-item > a:hover {
+    color: #e86824;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  main {
+    max-width: 80%;
+    margin: auto;
+  }
+}  */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

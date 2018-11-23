@@ -1,61 +1,61 @@
-* {
-  color: #e86824;
-}
-
 a {
   text-decoration: none;
   text-align: center;
+  color: #000;
 }
 
-/* ===== The Whole Container ===== */
+/* ===== Content Container ===== */
 .content {
   margin-top: 50px;
 }
 
-.bold {
-  font-weight: 700;
+
+/* ===== Content ===== */
+.address, .phoneMail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.address, .phoneMail, .oTT {
+  width: 480px;
+  border: 1px solid #e86824;
+  background: rgba(232, 104, 36, 0.1);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  margin: auto auto 20px auto;
+}
+
+h3 {
   text-align: center;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
-.address {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.map {
+  margin: 5px;
 }
 
-.map > img {
+.map-img {
   max-height: 100px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-.phoneMail {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.phoneMail > div {
+  margin: 20px auto;
 }
 
 .phone > p {
-  margin: auto auto 5px 5px;
+  margin: auto;
 }
 
+/* ===== Button ===== */
 .booking {
-  border: 1px solid #e86824;
-  border-radius: 5px;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
   padding: 3px 8px;
   margin: auto 5px auto auto;
-  font-weight: 700;
-}
-
-.bubble {
   border: 1px solid #e86824;
-  background: rgba(232, 104, 36, 0.1);
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
-  margin: 15px auto;
-  background: rgba(232, 104, 36, 0.1);
-  width: 100%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+/* ===== Opening Times ===== */
 table {
   border-spacing: 0;
 }
@@ -67,6 +67,7 @@ td, th {
 
 th {
   text-align: center;
+  padding: 20px;
 }
 
 body > main > div > table > tbody > tr:nth-child(2) > td:nth-child(1), body > main > div > table > tbody > tr:nth-child(2) > td:nth-child(2) {
@@ -76,3 +77,46 @@ body > main > div > table > tbody > tr:nth-child(2) > td:nth-child(1), body > ma
 body > main > div > table > tbody > tr:nth-child(8) > td:nth-child(1), body > main > div > table > tbody > tr:nth-child(8) > td:nth-child(2) {
   border-bottom: none;
 }
+
+/* ==================== Media Queries ==================== */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bubble {
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+  
+  .address, .phoneMail {
+    justify-content: space-around;
+    color: #fff;
+  }
+
+  .address {
+    padding-bottom: 10px; 
+  }
+
+  .oTT > tbody > tr > td, .oTT > tbody > tr > th, .bubble > div > p, .bubble > div > a > p, .fas, .fa-clock {
+    color: #000;
+  }
+  
+  .booking {
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .booking:hover {
+    background: rgba(250, 250, 250, 0.5);
+    color: #e86824;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...}  */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

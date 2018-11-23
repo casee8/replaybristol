@@ -1,11 +1,17 @@
 h1 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
 p {
   font-size: 1.2em;
+}
+
+.main-hr {
+  border: 1px solid #e86824;
+  max-width: 90%;
+  margin: auto;
 }
 
 .imgString > p {
@@ -18,7 +24,8 @@ p {
 }
 
 .onlyString {
-  margin-bottom: 20px;
+  margin: auto auto 20px auto;
+  max-width: 480px;
 }
 
 .onlyString > p {
@@ -26,12 +33,37 @@ p {
 }
 
 .imgString {
-  margin-bottom: 20px;
-  border: 2px solid #e86824;
+  margin: auto auto 20px auto;
+  border: 1px solid #e86824;
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  max-width: 480px;
 }
 
 .imgString > img {
   display: block;
   max-width: 100%;
 }
+
+/* ==================== Media Queries ==================== */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  main {
+    padding: 40px 1em 30px 1em;
+  }
+
+  .imgString, .onlyString {
+    max-width: 480px;
+    margin: auto auto 30px auto;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...}  */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
