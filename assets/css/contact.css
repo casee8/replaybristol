@@ -18,7 +18,7 @@ a {
 }
 
 .address, .phoneMail, .oTT {
-  width: 480px;
+  max-width: 480px;
   border: 1px solid #e86824;
   background: rgba(232, 104, 36, 0.1);
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
