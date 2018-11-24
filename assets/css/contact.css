@@ -17,7 +17,7 @@ a {
   align-items: center;
 }
 
-.address, .phoneMail, .oTT {
+.address, .phoneMail, .oTT-con {
   max-width: 480px;
   border: 1px solid #e86824;
   background: rgba(232, 104, 36, 0.1);
@@ -58,6 +58,7 @@ h3 {
 /* ===== Opening Times ===== */
 table {
   border-spacing: 0;
+  width: 100%;
 }
 
 td, th {
@@ -70,11 +71,11 @@ th {
   padding: 20px;
 }
 
-body > main > div > table > tbody > tr:nth-child(2) > td:nth-child(1), body > main > div > table > tbody > tr:nth-child(2) > td:nth-child(2) {
+.m-closed {
   background: #ccc;
 }
 
-body > main > div > table > tbody > tr:nth-child(8) > td:nth-child(1), body > main > div > table > tbody > tr:nth-child(8) > td:nth-child(2) {
+.bottom-td {
   border-bottom: none;
 }
 
