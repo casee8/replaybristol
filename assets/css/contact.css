@@ -4,13 +4,14 @@ a {
   color: #000;
 }
 
-/* ===== Content Container ===== */
-.content {
-  margin-top: 50px;
+/* ===== Content ===== */
+h1 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  max-width: 480px;
+  margin: auto;
 }
 
-
-/* ===== Content ===== */
 .address, .phoneMail {
   display: flex;
   justify-content: space-around;
@@ -51,7 +52,7 @@ h3 {
 .booking {
   padding: 3px 8px;
   margin: auto 5px auto auto;
-  border: 1px solid #e86824;
+  /* border: 1px solid #e86824; */
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
@@ -61,18 +62,35 @@ table {
   width: 100%;
 }
 
-td, th {
+td {
   border-bottom: 1px solid #ddd;
-  padding: 5px 15px;
+  padding: 5px;
 }
 
 th {
   text-align: center;
   padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
+  padding-left: 10px;
 }
 
 .m-closed {
   background: #ccc;
+}
+
+.closed-center {
+  text-align: center;
+}
+
+.second-column {
+  text-align: right;
+}
+
+.third-column {
+  text-align: center;
 }
 
 .bottom-td {
@@ -83,23 +101,30 @@ th {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .bubble {
-    font-size: 1.2em;
-    background: rgba(0, 0, 0, 0.1);
-    border: none;
+   main {
+    margin: 50px 0 0 0;
+    padding: 0 0 20px 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
   }
-  
+
+  .address, .phoneMail, .oTT-con {
+    border: none;
+    background: rgba(250, 250, 250, 0.5);
+    color: #000;
+    font-size: 1.2em;
+  }
+
   .address, .phoneMail {
     justify-content: space-around;
-    color: #fff;
   }
 
   .address {
     padding-bottom: 10px; 
   }
 
-  .oTT > tbody > tr > td, .oTT > tbody > tr > th, .bubble > div > p, .bubble > div > a > p, .fas, .fa-clock {
-    color: #000;
+  .orange-link:hover {
+    color: #e86824 !important;
   }
   
   .booking {
@@ -111,13 +136,30 @@ th {
     background: rgba(250, 250, 250, 0.5);
     color: #e86824;
   }
+
+  .tr-hover:hover {
+    background: #e86824;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...}  */
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...}  */
+@media only screen and (min-width: 992px) {
+  h1 {
+    max-width: 70%;
+  }
+
+  .address, .phoneMail {
+    max-width: 70%;
+    font-size: 1.3em;
+  }
+
+  .oTT-con {
+    font-size: 1.3em;
+  }
+} 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */

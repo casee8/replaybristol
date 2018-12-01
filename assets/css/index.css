@@ -1,16 +1,12 @@
 h1 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   text-align: center;
-}
-
-p {
-  font-size: 1.2em;
 }
 
 .main-hr {
   border: 1px solid #e86824;
-  max-width: 90%;
+  max-width: 480px;
   margin: auto;
 }
 
@@ -26,10 +22,12 @@ p {
 .onlyString {
   margin: auto auto 20px auto;
   max-width: 480px;
+  background: rgba(232, 104, 36, 0.1);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
 }
 
 .onlyString > p {
-  margin: auto 5px;
+  padding: 5px;
 }
 
 .imgString {
@@ -44,26 +42,120 @@ p {
   max-width: 100%;
 }
 
+/* .strong {
+  font-weight: 700;
+} */
+
 /* ==================== Media Queries ==================== */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   main {
-    padding: 40px 1em 30px 1em;
+    margin: 50px 0 0 0;
+    padding: 0 0 20px 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+
+  p {
+    font-size: 1.2em;
   }
 
   .imgString, .onlyString {
     max-width: 480px;
     margin: auto auto 30px auto;
+    border: none;
   }
 
+  .imgString > p, .onlyString > p {
+    margin: 0;
+    padding: 10px;
+    background: rgba(250, 250, 250, 0.5);
+    color: #000;
+  }
+
+  .main-hr {
+    max-width: 480px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...}  */
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...}  */
+@media only screen and (min-width: 992px) {
+  .imgString {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    max-width: 70%;
+    grid-gap: 5px;
+    box-shadow: none;
+  }
+
+  .imgString > p, .imgString > img {
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .first-img {
+    grid-column-start: 1;
+    grid-column-end: 16;
+  }
+
+  .first-p {
+    grid-column-start: 16;
+    grid-column-end: 21;
+    line-height: 1.5;
+  }
+
+  .second-img {
+    grid-area: 1/8/2/21;
+    margin: auto;
+  }
+
+  .second-p {
+    grid-area: 1/1/2/7;
+    line-height: 1.5;
+  }
+
+  .third-img {
+    grid-area: 1/5/2/17;
+  }
+  .third-p {
+    grid-area: 2/5/2/17; 
+  }
+
+  .fourth-img {
+    grid-area: 1/1/2/14;
+  }
+
+  .fourth-p {
+    grid-area: 1/15/2/21;
+    line-height: 1.5;
+  }
+
+  .fifth-img {
+    grid-area: 1/9/2/19;
+    margin: auto;
+  }
+
+  .fifth-p {
+    grid-area: 1/3/2/9;
+    line-height: 1.5;
+  }
+
+  .onlyString {
+    max-width: 70%;
+  }
+
+  #onlyString-short {
+    max-width: 35%;
+  }
+
+  .main-hr {
+    max-width: 70%;
+  }
+
+} 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */

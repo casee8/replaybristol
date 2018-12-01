@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 h1 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 table {
@@ -10,7 +10,7 @@ table {
   background-size: cover;
   border-spacing: 0;
   color: #fff;
-  border: 1px solid #e86824;
+  border: 4px solid #e86824;
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
 }
 
@@ -43,7 +43,7 @@ td {
 }
 
 th {
-  padding: 20px 5px;
+  padding: 30px 0;
   font-family: 'Indie Flower', cursive;
   font-size: 1.4em;
 }
@@ -51,13 +51,56 @@ th {
 /* ==================== Media Queries ==================== */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
+@media only screen and (min-width: 600px) {
+  main {
+    margin: 50px 0 0 0;
+    padding: 0 0 20px 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  .content > p {
+    background: rgba(250, 250, 250, 0.5);
+    color: #000;
+    font-size: 1.2em;
+    border: none;
+  }
+
+  table {
+    border: 4px solid #e86824;
+    font-size: 1.2em;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...}  */
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...}  */
+@media only screen and (min-width: 992px) {
+  .content, .content > p, .content > h1, table {
+    max-width: 70vw;
+  }
+
+  .content > p {
+    font-size: 1.3em;
+  }
+
+  .content > p {
+    margin: auto;
+  }
+
+  table {
+    font-size: 1.4em;
+  }
+
+  th{
+    padding: 50px 0 40px 0;
+  }
+
+  td {
+    padding: 0 35px 25px 35px;
+  }
+} 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */

@@ -67,6 +67,10 @@ body > header > nav > div.mainImg > a > img {
   overflow: hidden;
 }
 
+.menu-nav-large {
+  display: none;
+}
+
 .nav-link {
   color: #fff;
   text-decoration: none;
@@ -165,6 +169,10 @@ footer {
     cursor: pointer;
   }
 
+  .menu {
+    width: 60%;
+  }
+
   /* ===== Main Links ===== */
   .nav-item > a:hover {
     color: #e86824;
@@ -172,15 +180,32 @@ footer {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-  main {
-    max-width: 80%;
-    margin: auto;
+@media only screen and (min-width: 768px) {
+  .menu {
+    width: 50%;
   }
-}  */
+} 
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...}  */
+@media only screen and (min-width: 992px) {
+  /* Navbar */
+  .show, .fa-bars {
+    display: none;
+  }
+
+  .menu-nav-large {
+    display: flex;
+  }
+
+  .nav-link {
+    color: #000;
+    margin: auto 10px;
+  }
+
+  .selected {
+    color: #e86824;
+  }
+} 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...} */
