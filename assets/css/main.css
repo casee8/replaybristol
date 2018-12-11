@@ -107,20 +107,19 @@ footer {
   text-decoration: none;
 }
 
-.footer-image {
+.footer-img-socialM {
   grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.footer-image > img {
-  max-width: 50px;
-  margin: 5px auto auto 12px;
-}
-
-.follow-us {
-  grid-column-start: 2;
   grid-column-end: 4;
-  margin: 5px auto auto 5px;
+  display: flex;
+}
+
+.footer-img-socialM > img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-img-socialM > img, .follow-us {
+  margin: 5px;
 }
 
 .logos {
@@ -143,9 +142,10 @@ footer {
   margin: 5px auto auto 5px;
 }
 
-.privacy > p {
+.privacy > a {
   color: #fff;
   font-size: 0.8em;
+  text-decoration: none;
 }
 
 .copyright {
@@ -160,8 +160,12 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   body {
-    background: url("https://images.pexels.com/photos/516114/pexels-photo-516114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat fixed center;
+    background: url("../media/background.jpg") no-repeat fixed center;
     background-size: cover;
+  }
+
+  h1 {
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
   }
 
   /* ===== Navbar ===== */

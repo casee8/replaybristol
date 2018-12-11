@@ -162,4 +162,8 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
+@media only screen and (min-width: 1200px) {
+  h1, .address, .phoneMail {
+    max-width: 828px;
+  }
+}
