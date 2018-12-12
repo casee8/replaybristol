@@ -1,12 +1,10 @@
 #aSC-content {
-  max-width: 100%;
-  margin: auto 0 0 0;
+  width: 100%;
+  margin: 0;
 }
 
 .aSC-img {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
 /* ==================== Media Queries ==================== */
@@ -15,11 +13,6 @@
 @media only screen and (min-width: 600px) {
   body {
     background: none;
-  }
-
-  #aSC-content {
-    margin: auto 0 0 0;
-    width: 100%;
   }
 }
 
@@ -31,8 +24,13 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .aSC-img {
-    width: 100%;
-    margin: auto;
+  body {
+    background: url("../media/background.jpeg") no-repeat fixed center;
+    background-size: cover;
+  }
+
+  #aSC-content {
+    width: 1000px;
+    margin: 50px auto;
   }
 }

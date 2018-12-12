@@ -160,7 +160,7 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   body {
-    background: url("../media/background.jpg") no-repeat fixed center;
+    background: url("../media/background.jpeg") no-repeat fixed center;
     background-size: cover;
   }
 
