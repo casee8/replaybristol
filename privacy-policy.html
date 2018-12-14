@@ -15,12 +15,16 @@
 
 <body>
 
-  <a href="#" onclick="closeWindow()">CLOSE WINDOW</a>
-
-  <object data="assets/policy/policy.pdf" width="800px" height="800px">
-    <p>Oops! You don't support PDFs!</p>
-    <p><a href="some.pdf">Download Instead</a>
-  </object>
+  <div>
+    <a href="#" onclick="closeWindow()">CLOSE</a>
+  </div>
+  
+  <div>
+    <object data="assets/policy/policy.pdf">
+      <p>Oops! You don't support PDFs!</p>
+      <p><a href="assets/policy/policy.pdf">Download Instead</a>
+    </object>
+  </div>
 
   <script>
     function closeWindow() {

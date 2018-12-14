@@ -2,12 +2,12 @@ body {
   margin: 0;
 }
 
-object {
+div > object {
   width: 100%;
   height: 95vh;
 }
 
-a {
+div > a {
   float: right;
   margin: 10px 10px 10px auto;
   text-decoration: none;
