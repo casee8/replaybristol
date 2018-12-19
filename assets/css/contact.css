@@ -20,7 +20,7 @@ h1 {
 
 .address, .phoneMail, .oTT-con {
   max-width: 480px;
-  border: 1px solid #e86824;
+  /* border: 1px solid #e86824; */
   background: rgba(232, 104, 36, 0.1);
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
   margin: auto auto 20px auto;
@@ -52,8 +52,14 @@ h3 {
 .booking {
   padding: 3px 8px;
   margin: auto 5px auto auto;
-  /* border: 1px solid #e86824; */
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.booking:hover {
+  background: #fff;
+  color: #e86824;
 }
 
 /* ===== Opening Times ===== */
@@ -114,7 +120,7 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
 
   .address, .phoneMail, .oTT-con {
     border: none;
-    background: rgba(250, 250, 250, 0.5);
+    background: rgba(250, 250, 250, 0.7);
     color: #000;
     font-size: 1.2em;
   }
@@ -131,16 +137,6 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
 
   .orange-link:hover {
     color: #e86824 !important;
-  }
-  
-  .booking {
-    border: none;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.1);
-  }
-  .booking:hover {
-    background: #fff;
-    color: #e86824;
   }
 
   .bottom-td {
