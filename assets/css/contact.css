@@ -12,15 +12,51 @@ h1 {
   margin: auto;
 }
 
-.address, .phoneMail {
-  display: flex;
-  justify-content: space-around;
+.contact, .mail {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   align-items: center;
+  justify-items: center;
 }
 
-.address, .phoneMail, .oTT-con {
+.address {
+  grid-area: 1/1/2/6;
+  margin: 10px auto;
+}
+
+.tel {
+  grid-area: 2/1/3/6;
+  margin-bottom: 10px;
+}
+
+.map {
+  grid-area: 1/6/3/11;
+}
+
+.emailBooking {
+  grid-area: 1/6/2/11;
+}
+
+.counter {
+  grid-area: 1/1/2/6;
+  margin: 10px;
+}
+
+#person, #session {
+  width: 100%;
+}
+
+label, .label {
+  color: #aaa;
+  font-size: 0.8em;
+}
+
+#amount {
+  float: right;
+}
+
+.contact, .mail, .oTT-con {
   max-width: 480px;
-  /* border: 1px solid #e86824; */
   background: rgba(232, 104, 36, 0.1);
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
   margin: auto auto 20px auto;
@@ -31,33 +67,34 @@ h3 {
   margin-bottom: 10px;
 }
 
-.map {
-  margin: 5px;
-}
-
 .map-img {
   max-height: 100px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-.phoneMail > div {
-  margin: 20px auto;
-}
-
-.phone > p {
-  margin: auto;
-}
-
 /* ===== Button ===== */
 .booking {
   padding: 3px 8px;
-  margin: auto 5px auto auto;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.1);
 }
 
+#submit {
+  display: inline-block;
+  padding: 1px 2px 3px 2px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
 .booking:hover {
+  background: #fff;
+  color: #e86824;
+}
+
+#submit:hover {
   background: #fff;
   color: #e86824;
 }
@@ -118,17 +155,20 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
     color: #fff;
   }
 
-  .address, .phoneMail, .oTT-con {
+  .contact, .mail, .oTT-con {
     border: none;
     background: rgba(250, 250, 250, 0.7);
     color: #000;
     font-size: 1.2em;
   }
 
-  .address, .phoneMail {
-    justify-content: space-around;
+  .contact, .mail {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  label, .label {
+    color: #666;
   }
 
   h3 {
@@ -153,7 +193,7 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
     max-width: 70%;
   }
 
-  .address, .phoneMail {
+  .contact, .mail {
     max-width: 70%;
     font-size: 1.3em;
   }
@@ -165,7 +205,7 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  h1, .address, .phoneMail {
+  h1, .contact, .mail {
     max-width: 828px;
   }
 }

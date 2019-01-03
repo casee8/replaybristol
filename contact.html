@@ -97,10 +97,15 @@
   <main>
     <div>
       <h1>Get in touch:</h1>
-      <div class="address">
-        <div>
+      <div class="contact">
+        <div class="address">
           <h3>Address:</h3>
           <p>196 Cheltenham Road<br>Bristol<br>BS6 5RB</p>
+        </div>
+        <div class="tel">
+          <h3>Tel:</h3>
+            <a class="phone" href="tel:+447828206202"><p><i class="fas fa-phone"></i> +44 7828 206202</p></a>
+            <a class="phone" href="tel:+447437930346"><p><i class="fas fa-phone"></i> +44 7437 930346</p></a>
         </div>
         <div class="map">
           <a href="https://goo.gl/maps/kvMS5HJqpxE2">
@@ -112,16 +117,21 @@
         </div>
       </div>
 
-      <div class="phoneMail">
-        <div>
-          <h3>Tel:</h3>
-            <a class="phone" href="tel:+447828206202"><p><i class="fas fa-phone"></i> +44 7828 206202</p></a>
-            <a class="phone" href="tel:+447437930346"><p><i class="fas fa-phone"></i> +44 7437 930346</p></a>
-        </div>
-        <div>
+      <div class="mail">
+        <div class="emailBooking">
           <a class="booking" href="mailto:replaybristol@gmail.com">
             <i class="far fa-envelope"></i> Book a Table
           </a>
+        </div>
+        <div class="counter">
+          <h3>Table charge counter:</h3>
+          <label for="person">How many person?</label>
+          <input id="person" type="number" step="1" value="1" min="1"><br>
+          <label for="sesion">How many session?</label>
+          <input id="session" type="number" step="1" value="1" min="1"><br>
+          <p class="label" for="session">*1 session is 3 hours long</p><br>
+          <p id="submit">Submit</p>
+          <p id="amount"></p>
         </div>
       </div>
 
@@ -181,13 +191,13 @@
       <div class="follow-us">
         <p class="footer-string">Follow us on:</p>
         <div class="logos">
-          <a class="footer-string" href="https://www.facebook.com/ReplayBristol/" target="_blank">
+          <a class="footer-string" href="https://www.facebook.com/ReplayBristol/" target="_blank" rel="noopener">
             <i class="fab fa-facebook footer-string"></i>
           </a>
-          <a class="footer-string" href="https://twitter.com/Replay_Bristol" target="_blank">
+          <a class="footer-string" href="https://twitter.com/Replay_Bristol" target="_blank" rel="noopener">
             <i class="fab fa-twitter-square footer-string"></i>
           </a>
-          <a class="footer-string" href="https://www.instagram.com/replaybristol/" target="_blank">
+          <a class="footer-string" href="https://www.instagram.com/replaybristol/" target="_blank" rel="noopener">
             <i class="fab fa-instagram footer-string"></i>
           </a>
         </div>
@@ -204,5 +214,6 @@
   </footer>
 
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/cost_counter.js"></script>
 </body>
 </html>
