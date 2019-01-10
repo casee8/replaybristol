@@ -85,12 +85,14 @@ body > header > nav > div.mainImg > a > img {
 
 .selected {
   color: #e86824;
+  cursor: text;
 }
 
 /* ===== Main ===== */
 main {
   padding-top: 50px;
   margin: auto 15px;
+  min-height: 750px;
 }
 
 /* ===== Footer ===== */
@@ -105,11 +107,12 @@ footer {
   color: #fff;
   font-size: 0.8em;
   text-decoration: none;
+  margin: 5px auto auto 10px;
 }
 
 .footer-img-socialM {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 9;
   display: flex;
 }
 
@@ -125,10 +128,6 @@ footer {
 .logos {
   display: flex;
   justify-content: space-evenly;
-}
-
-.logos > a {
-  font-size: 1.5em;
 }
 
 .footer-hr {
@@ -217,6 +216,7 @@ footer {
 
   .selected {
     color: #e86824;
+    cursor: text;
   }
 } 
 

@@ -5,7 +5,22 @@ h1 {
   padding-bottom: 35px;
 }
 
+.tableHolder {
+  max-width: 480px;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+  color: #e86824;
+  font-size: 1.3em;
+}
+
 table {
+  width: 100%;
+  margin: auto auto 20px auto;
   background: repeating-linear-gradient(#222, #000 25px, #222 28px);
   border-spacing: 0;
   color: #fff;
@@ -13,39 +28,26 @@ table {
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
 }
 
-.content, table {
+.content {
   max-width: 480px;
-  margin: auto auto 20px auto;
-}
-
-.content > p {
-  max-width: 480px;
-  /* border: 1px solid #e86824; */
-  background: rgba(232, 104, 36, 0.1);
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
-  padding: 10px;
-  text-align: center;
-}
-
-.content > p > i {
-  color: #00CB00;
-}
-
-.veg {
-  font-weight: 700;
+  margin: auto;
 }
 
 td {
   padding: 0 10px 20px 10px;
   font-family: 'Indie Flower', cursive;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
-th {
+td:hover {
+  color: #e86824;
+}
+
+/* th {
   padding: 30px 0;
   font-family: 'Indie Flower', cursive;
   font-size: 1.4em;
-}
+} */
 
 /* ==================== Media Queries ==================== */
 
@@ -57,12 +59,9 @@ th {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
   }
-  
-  .content > p {
-    background: rgba(250, 250, 250, 0.7);
-    color: #000;
-    font-size: 1.2em;
-    border: none;
+
+  .tableHolder {
+    margin: auto;
   }
 
   table {
@@ -76,22 +75,17 @@ th {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .content, .content > p, .content > h1, table {
+  .content, .content > h1, .tableHolder {
     max-width: 70vw;
-  }
-
-  .content > p {
-    font-size: 1.3em;
-    margin: auto;
   }
 
   table {
     font-size: 1.4em;
   }
 
-  th{
+  /* th{
     padding: 50px 0 40px 0;
-  }
+  } */
 
   td {
     padding: 0 35px 25px 35px;
@@ -100,7 +94,7 @@ th {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .content, .content > h1, .content > p, table {
+  .content, .content > h1, .tableHolder {
     max-width: 828px;
   }
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#e86824">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#e86824">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/media/favicon-32x32.png" type="image/x-icon" sizes="32x32">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <!-- My styling -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/games.css">
+  <title>Replay - Menu</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="mainImg">
+        <a href="index.html">
+          <img src="assets/media/25344606_10203879061894580_2118931479_o-1_small.png" alt="Replay Bristol logo">
+        </a>
+      </div>
+      <div class="menu-btn">
+          <i id="menuBtn" class="fas fa-bars"></i>
+          <ul class="menu-nav-large">
+            <li class="nav-item">
+              <a href="events.html" class="nav-link">
+                Events
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="games.html" class="nav-link selected">
+                Games
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="menu.html" class="nav-link">
+                Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="afterschoolclub.html" class="nav-link">
+                After School Club
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">
+                Contact
+              </a>
+            </li>
+          </ul>
+      </div>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">
+              Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="games.html" class="nav-link selected">
+              Games
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link">
+              Menu
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="afterschoolclub.html" class="nav-link">
+              After School Club
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <h1>Games</h1>
+    </div>
+    <div class="tableHolder">
+      <input type="text" id="userInput" onkeyup="searchGames()" placeholder=" Search for games..." title="Type in a name" autofocus>
+      <table id="gamesTable">
+        <!-- <tr>
+          <th>Game</th>
+          <th>Game type</th>
+          <th>Number of players</th>
+          <th>Game duration</th>
+          <th>Game duration</th>
+          <th>Categories</th>
+        </tr> -->
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-img-socialM">
+      <img src="assets/media/icon_rotate.png" alt="Replay Bristol Logo">
+      <div class="follow-us">
+        <p class="footer-string">Follow us on:</p>
+        <div class="logos">
+          <a class="footer-string" href="https://www.facebook.com/ReplayBristol/" target="_blank" rel="noopener">
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+          <a class="footer-string" href="https://twitter.com/Replay_Bristol" target="_blank" rel="noopener">
+            <i class="fab fa-twitter-square"></i> Twitter
+          </a>
+          <a class="footer-string" href="https://www.instagram.com/replaybristol/" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="footer-hr">
+    <div class="privacy">
+      <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+    </div>
+    <div class="copyright footer-string">
+      Copyright &copy; 2018
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/gameList.js"></script>
+</body>
+</html>
