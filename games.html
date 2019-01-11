@@ -36,8 +36,8 @@
           <i id="menuBtn" class="fas fa-bars"></i>
           <ul class="menu-nav-large">
             <li class="nav-item">
-              <a href="events.html" class="nav-link">
-                Events
+              <a href="private-hire-and-basement.html" class="nav-link">
+                Private Hire and Basement
               </a>
             </li>
             <li class="nav-item">
@@ -65,9 +65,11 @@
       <nav class="menu">
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="events.html" class="nav-link">
-              Events
-            </a>
+            <div class="longName">
+              <a href="private-hire-and-basement.html" class="nav-link">
+                Private Hire<br>and<br>Basement
+              </a>
+            </div>
           </li>
           <li class="nav-item">
             <a href="games.html" class="nav-link selected">
@@ -96,19 +98,23 @@
 
   <main>
     <div class="content">
-      <h1>Games</h1>
+      <h1>Our Board Games Library</h1>
     </div>
     <div class="tableHolder">
       <input type="text" id="userInput" onkeyup="searchGames()" placeholder=" Search for games..." title="Type in a name" autofocus>
-      <table id="gamesTable">
-        <!-- <tr>
-          <th>Game</th>
-          <th>Game type</th>
-          <th>Number of players</th>
-          <th>Game duration</th>
-          <th>Game duration</th>
-          <th>Categories</th>
-        </tr> -->
+      <table>
+        <thead>
+          <tr>
+            <th>Games:</th>
+            <!-- <th>Game type</th>
+            <th>Number of players</th>
+            <th>Game duration</th>
+            <th>Game duration</th>
+            <th>Categories</th> -->
+          </tr>
+        </thead>
+        <tbody id="gamesTable">
+        </tbody>
       </table>
     </div>
   </main>
