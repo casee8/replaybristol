@@ -106,8 +106,8 @@
         </div>
         <div class="tel">
           <h3>Tel:</h3>
-            <a class="mainContentLinks" href="tel:+447828206202"><p><i class="fas fa-phone"></i> +44 7828 206202</p></a>
             <a class="mainContentLinks" href="tel:+447437930346"><p><i class="fas fa-phone"></i> +44 7437 930346</p></a>
+            <a class="mainContentLinks" href="tel:+447828206202"><p><i class="fas fa-phone"></i> +44 7828 206202</p></a>
         </div>
         <div class="map">
           <a href="https://goo.gl/maps/kvMS5HJqpxE2">
@@ -120,27 +120,48 @@
       </div>
 
       <div class="mail">
-        <div class="emailBooking">
-          <a class="booking" href="mailto:replaybristol@gmail.com">
-            <i class="far fa-envelope"></i> Book a Table
-          </a>
-        </div>
+        
         <div class="counter-area">
           <h3>Table charge counter:</h3>
+
           <div class="counter-table-grid">
+
+            <h4 class="boardGameHeader">Board Games</h4>
+
             <div class="counter">
-              <label for="person">How many person?</label>
-              <input id="person" type="number" step="1" value="1" min="1" autofocus><br>
-              <label for="session">How many session?</label>
-              <input id="session" type="number" step="1" value="1" min="1"><br>
-              <p class="label" for="session">*1 session is 3 hours long</p>
+              <label for="person">How many person?</label><br>
+              <input id="person" type="number" step="1" value="0" min="0" autofocus><br>
+              <label for="session">How many session?</label><br>
+              <input id="session" type="number" step="1" value="0" min="0"><br>
+              <p class="note">*1 session is 3 hours long</p>
             </div>
+
+            <h4 class="pingPongHeader">Ping-Pong</h4>
+
+            <div class="ping-pongCounter">
+              <!-- <p class="label"></p> -->
+              <label for="ping-pong">Free between Tuesday to Thursday<br>How many round (Friday to Sunday only)?</label><br>
+              <input id="ping-pong" type="number" step="1" value="0" min="0"><br>
+              <p class="note">*1 round is half an hour long</p>
+            </div>
+
+            <hr class="main-hr">
+
             <div class="submit">
               <p id="submit">Submit</p>
             </div>
+
             <div class="amount">
-              <p id="amount"></p>
-              <p id="note" class="hidden">*Please pay by cash upon arrival</p>
+              <p>Amount: £<span id="amount">0</span></p>
+              <p class="note" id="note">*Please pay by cash upon arrival</p>
+            </div>
+
+            <hr class="main-hr2">
+
+            <div class="emailBooking">
+              <a class="booking" href="mailto:replaybristol@gmail.com">
+                <i class="far fa-envelope"></i> Book a Table
+              </a>
             </div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 var submit = document.querySelector('#submit');
 var amount = document.querySelector('#amount');
 var note = document.querySelector('#note');
-var cost = 2;
+var boardGameCost = 2;
+var pingPongCost = 3;
 
 submit.addEventListener('click', costCounter);
 
 function costCounter() {
-  note.classList.remove('hidden');
-  return amount.innerText = "Amount: £" + Number(document.querySelector('#person').value) * cost * Number(document.querySelector('#session').value);
+  return amount.innerText = (Number(document.querySelector('#person').value) * boardGameCost * Number(document.querySelector('#session').value)) + pingPongCost * Number(document.querySelector('#ping-pong').value);
 }

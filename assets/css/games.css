@@ -15,6 +15,7 @@ input {
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
   margin-bottom: 5px;
   color: #e86824;
+  text-shadow: 1px 1px 2px #e86824;
   font-size: 1.3em;
 }
 

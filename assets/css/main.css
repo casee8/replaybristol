@@ -103,7 +103,7 @@ body > header > nav > div.mainImg > a > img {
 main {
   padding-top: 50px;
   margin: auto 15px;
-  min-height: 100vh;
+  min-height: calc(100vh - 124px);
 }
 
 /* ===== Footer ===== */

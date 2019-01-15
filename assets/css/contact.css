@@ -4,11 +4,6 @@ a {
   color: #000;
 }
 
-.hidden {
-  display: none;
-}
-
-/* ===== Content ===== */
 h1 {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -16,7 +11,8 @@ h1 {
   margin: auto;
 }
 
-.contact, .mail {
+/* ===== Address and phone ===== */
+.contact {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   align-items: center;
@@ -37,57 +33,6 @@ h1 {
   grid-area: 1/6/3/11;
 }
 
-.emailBooking {
-  grid-area: 1/6/2/11;
-}
-
-.counter-area {
-  grid-area: 1/1/2/6;
-  margin: 10px;
-}
-
-.counter-table-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.counter {
-  grid-area: 1/1/2/5;
-}
-
-.submit {
-  grid-area: 2/1/3/5;
-}
-
-.amount {
-  grid-area: 1/5/3/8;
-}
-
-#note {
-  color: #666;
-  font-size: 0.8em;
-}
-
-#person, #session {
-  width: 100%;
-}
-
-label, .label {
-  color: #aaa;
-  font-size: 0.8em;
-}
-
-#amount {
-  float: right;
-}
-
-.contact, .mail, .oTT-con {
-  max-width: 480px;
-  background: rgba(232, 104, 36, 0.1);
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
-  margin: auto auto 20px auto;
-}
-
 h3 {
   text-align: center;
   margin-bottom: 10px;
@@ -98,31 +43,109 @@ h3 {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+/* ===== Counter and  booking ===== */
+.mail {
+  padding-top: 15px;
+}
+
+.counter-table-grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.boardGameHeader {
+  grid-area: 1/1/2/12;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.pingPongHeader {
+  grid-area: 3/1/4/12;
+  text-align: center;
+  margin-top: 15px; 
+}
+
+.counter {
+  grid-area: 2/1/3/12;
+}
+
+.ping-pongCounter {
+  grid-area: 4/1/5/12;
+}
+
+.main-hr {
+  border: 1px solid #e86824;
+  width: 100%;
+  margin: 20px auto;
+  grid-area: 5/2/6/11;
+}
+
+.submit {
+  grid-area: 6/1/7/5;
+}
+
+.amount {
+  grid-area: 6/5/7/12;
+}
+
+.main-hr2 {
+  border: 1px solid #e86824;
+  width: 100%;
+  margin: 20px auto;
+  grid-area: 7/2/8/11;
+}
+
+.emailBooking {
+  grid-area: 8/1/9/12;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+.note {
+  color: #666;
+  font-size: 0.8em;
+}
+
+#ping-pong {
+  width: 100%;
+}
+
+label, .label {
+  font-size: 0.8em;
+}
+
+/* ===== Overall size and style ===== */
+.contact, .mail, .oTT-con {
+  max-width: 480px;
+  background: rgba(232, 104, 36, 0.1);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  margin: auto auto 20px auto;
+}
+
 /* ===== Button ===== */
 .booking {
   padding: 3px 8px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #000;
+  border: 1px solid #e86824;
 }
 
 #submit {
   display: inline-block;
-  padding: 1px 2px 3px 2px;
+  padding: 3px 8px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.1);
-  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000;
+  border: 1px solid #e86824;
 }
 
-.booking:hover {
-  background: #fff;
+.booking:hover, #submit:hover {
   color: #e86824;
-}
-
-#submit:hover {
-  background: #fff;
-  color: #e86824;
+  text-shadow: 1px 1px 2px #e86824;
 }
 
 /* ===== Opening Times ===== */
@@ -188,13 +211,21 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
     font-size: 1.2em;
   }
 
-  .contact, .mail {
+  .contact {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  label, .label {
-    color: #666;
+  .mail {
+    padding-top: 30px;
+  }
+
+  .submit {
+    grid-area: 6/2/7/5;
+  }
+  
+  .amount {
+    grid-area: 6/5/7/11;
   }
 
   h3 {
@@ -226,6 +257,54 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
 
   .oTT-con {
     font-size: 1.3em;
+  }
+
+  /* ===== Counter and  booking ===== */
+  .counter-table-grid {
+    justify-items: normal
+  }
+
+  .boardGameHeader {
+    grid-area: 1/1/2/6;
+    margin-bottom: 15px; 
+  }
+
+  .pingPongHeader {
+    grid-area: 1/6/2/12;
+    margin-bottom: 15px; 
+  }
+
+  .counter {
+    grid-area: 2/2/3/6;
+  }
+
+  .ping-pongCounter {
+    grid-area: 2/7/3/11;
+  }
+
+  .main-hr {
+    margin: 20px auto;
+    grid-area: 3/2/4/11;
+  }
+
+  .submit {
+    grid-area: 4/2/5/4;
+  }
+
+  .amount {
+    grid-area: 4/4/5/11;
+  }
+
+  #person, #session {
+    width: 200px;
+  }
+
+  .main-hr2 {
+    grid-area: 5/2/6/11;
+  }
+
+  .emailBooking {
+    grid-area: 6/2/7/11;
   }
 } 
 
