@@ -34,7 +34,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -107,18 +107,19 @@ h1 {
 
 .imgString > p {
   padding: 5px;
-  background: rgba(232, 104, 36, 0.1);
+  background: #fff;
 }
 
 .fa-hand-point-right {
   color: #e86824;
+  text-shadow: 1px 1px 2px #e86824;
 }
 
 .onlyString {
   margin: auto auto 20px auto;
   max-width: 480px;
-  background: rgba(232, 104, 36, 0.1);
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .onlyString > p {
@@ -127,8 +128,7 @@ h1 {
 
 .imgString {
   margin: auto auto 20px auto;
-  /* border: 1px solid #e86824; */
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
   max-width: 480px;
 }
 
@@ -139,6 +139,26 @@ h1 {
 
 .strong {
   font-weight: 700;
+}
+
+.cookieNote {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.cookieNote > p {
+  background: #32353B;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 0.8em;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 /* ==================== Media Queries ==================== */
@@ -165,7 +185,6 @@ h1 {
   .imgString > p, .onlyString > p {
     margin: 0;
     padding: 10px;
-    background: #fff;
     color: #000;
   }
 
@@ -193,7 +212,7 @@ h1 {
   }
 
   .imgString > p, .imgString > img {
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
   }
 
   .first-img {

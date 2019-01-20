@@ -43,7 +43,7 @@ h3 {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* ===== Counter and  booking ===== */
+/* ===== Counter and booking ===== */
 .mail {
   padding-top: 15px;
 }
@@ -119,8 +119,8 @@ label, .label {
 /* ===== Overall size and style ===== */
 .contact, .mail, .oTT-con {
   max-width: 480px;
-  background: rgba(232, 104, 36, 0.1);
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
   margin: auto auto 20px auto;
 }
 
@@ -250,13 +250,17 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
     max-width: 70%;
   }
 
-  .contact, .mail {
+  .contact, .mail, .oTT-con {
     max-width: 70%;
     font-size: 1.3em;
   }
 
   .oTT-con {
     font-size: 1.3em;
+  }
+
+  body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
+    padding-left: 60px;
   }
 
   /* ===== Counter and  booking ===== */
@@ -310,7 +314,11 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  h1, .contact, .mail {
+  h1, .contact, .mail, .oTT-con {
     max-width: 828px;
+  }
+
+  body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
+    padding-left: 95px;
   }
 }

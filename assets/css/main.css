@@ -8,12 +8,18 @@
 }
 
 body {
-  background: #fff;
+  background: rgba(232, 104, 36, 0.1);
   z-index: 0;
 }
 
 .mainContentLinks {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #000;
+  text-shadow: 1px 1px 2px #000;
+  font-style: oblique;
+}
+
+.mainContentLinks:hover {
   color: #e86824;
   text-shadow: 1px 1px 2px #e86824;
 }
@@ -29,7 +35,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .fa-bars {
@@ -51,7 +57,7 @@ body > header > nav > div.mainImg > a > img {
   width: 70%;
   visibility: hidden;
   background: rgba(0, 0, 0, 0.9);
-  box-shadow: 3px 0 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 4px 0 5px rgba(0, 0, 0, 0.7);
   transform: translate3d(-100%, 0, 0);
   transition: all 500ms ease;
 }
