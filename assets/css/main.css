@@ -15,13 +15,13 @@ body {
 .mainContentLinks {
   text-decoration: underline;
   color: #000;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: 1px 1px 3px #000;
   font-style: oblique;
 }
 
 .mainContentLinks:hover {
   color: #e86824;
-  text-shadow: 1px 1px 2px #e86824;
+  text-shadow: 1px 1px 3px #e86824;
 }
 
 /* ===== Navbar ===== */
