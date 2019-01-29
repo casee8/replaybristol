@@ -20,7 +20,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-p, h3 {
+.paragraphs, h3 {
   padding: 5px;
 }
 
@@ -52,7 +52,7 @@ p, h3 {
     font-size: 1.2em;
   }
 
-  p, h3 {
+  .paragraphs, h3 {
     padding: 10px;
   }
 }
