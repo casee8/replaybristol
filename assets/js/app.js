@@ -4,15 +4,6 @@ const main = document.querySelector('main');
 const allImg = document.querySelectorAll('.all-img');
 
 function mainApp() {
-  
-  function imgFilter(){
-    for (var i = 0; i < allImg.length; i++) {
-      allImg[i].classList.add('turn-to-normal');
-    }
-  }
-
-  setTimeout(imgFilter, 100);
-
   function toggleMenu(){
     menuContent.classList.toggle('show');
   };
@@ -26,3 +17,5 @@ function mainApp() {
 
   main.addEventListener('click', removeShow, false);
 };
+
+mainApp();

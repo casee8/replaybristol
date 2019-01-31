@@ -27,7 +27,10 @@
   <title>Replay - Contact</title>
 </head>
 
-<body onload="mainApp()">
+<body>
+  <script src="assets/js/app.js" async></script>
+  <script src="assets/js/cost_counter.js" async></script>
+
   <header>
     <nav>
       <div class="mainImg">
@@ -143,7 +146,7 @@
 
             <div class="ping-pongCounter">
               <!-- <p class="label"></p> -->
-              <label for="ping-pong">Free between Tuesday to Thursday<br>How many round (Friday to Sunday only)?</label><br>
+              <label for="ping-pong">Free between Tuesday and Thursday<br>How many round (Friday to Sunday only)?</label><br>
               <input id="ping-pong" type="number" step="1" min="0"><br>
               <p class="note">*1 round is half an hour long</p>
             </div>
@@ -248,7 +251,5 @@
     </div>
   </footer>
 
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/cost_counter.js"></script>
 </body>
 </html>
