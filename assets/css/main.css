@@ -15,7 +15,7 @@ body {
 .mainContentLinks {
   text-decoration: underline;
   color: #000;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 0 0 15px #333;
   font-style: oblique;
 }
 
@@ -162,6 +162,10 @@ footer {
   color: #fff;
   font-size: 0.8em;
   text-decoration: none;
+}
+
+.cookieNote > p > a {
+  color: #fff;
 }
 
 .copyright {

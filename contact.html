@@ -128,34 +128,49 @@
       <div class="mail">
         
         <div class="counter-area">
-          <h3>Table charge counter:</h3>
+          <h3>Table Booking</h3>
+
+          <!-- <hr class="main-hr"> -->
 
           <div class="counter-table-grid">
 
-            <h4 class="boardGameHeader">Board Games</h4>
+            <h4 class="boardGameHeader labelColl">Board Games</h4>
 
             <div class="counter">
               <label for="person">How many person?</label><br>
-              <input id="person" type="number" step="1" min="0" autofocus><br>
+              <input id="person" class="inputGroup" type="number" step="1" min="0" placeholder="0"><br>
               <label for="session">How many session?</label><br>
-              <input id="session" type="number" step="1" min="0"><br>
+              <input id="session" class="inputGroup" type="number" step="1" min="0" placeholder="0"><br>
               <p class="note">*1 session is 3 hours long</p>
             </div>
 
-            <h4 class="pingPongHeader">Ping-Pong</h4>
+            <h4 class="pingPongHeader labelColl">Ping-Pong</h4>
 
             <div class="ping-pongCounter">
               <!-- <p class="label"></p> -->
               <label for="ping-pong">Free between Tuesday and Thursday<br>How many round (Friday to Sunday only)?</label><br>
-              <input id="ping-pong" type="number" step="1" min="0"><br>
+              <input id="ping-pong" class="inputGroup" type="number" step="1" min="0" placeholder="0"><br>
               <p class="note">*1 round is half an hour long</p>
             </div>
 
-            <hr class="main-hr">
+            <div class="dtn-input">
+              <label class="first-name-label labelColl" for="firstName">
+                <h4>First name:</h4>
+              </label>
+              <input id="firstName" class="inputGroup" type="text" placeholder="Only First Name">
 
-            <div class="submit">
-              <p id="submit">Submit</p>
+              <label class="date-selector-label labelColl" for="date-selected">
+                <h4>Select date:</h4>
+              </label>
+              <input id="date-selected" type="date">
+
+              <label class="time-selector-label labelColl" for="time-selected">
+                <h4>Select time:</h4>
+              </label>
+              <input id="time-selected" type="time">
             </div>
+
+            <hr class="main-hr">
 
             <div class="amount">
               <p>Amount: £<span id="amount">0</span></p>
@@ -165,8 +180,8 @@
             <hr class="main-hr2">
 
             <div class="emailBooking">
-              <a class="booking" href="mailto:replaybristol@gmail.com">
-                <i class="far fa-envelope"></i> Book a Table
+              <a id="booking" class="booking" href="mailto:replaybristol@gmail.com">
+                <i class="fas fa-at"></i> Book a Table
               </a>
             </div>
           </div>
