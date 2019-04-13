@@ -148,24 +148,24 @@
 
             <div class="ping-pongCounter">
               <!-- <p class="label"></p> -->
-              <label for="ping-pong">Free between Tuesday and Thursday<br>How many round (Friday to Sunday only)?</label><br>
+              <label for="ping-pong">How many round (Friday to Sunday only)?</label><br>
               <input id="ping-pong" class="inputGroup" type="number" step="1" min="0" placeholder="0"><br>
               <p class="note">*1 round is half an hour long</p>
             </div>
 
             <div class="dtn-input">
               <label class="first-name-label labelColl" for="firstName">
-                <h4>First name:</h4>
+                <h4>*First name:</h4>
               </label>
               <input id="firstName" class="inputGroup" type="text" placeholder="Only First Name">
 
               <label class="date-selector-label labelColl" for="date-selected">
-                <h4>Select date:</h4>
+                <h4>*Select date:</h4>
               </label>
               <input id="date-selected" type="date">
 
               <label class="time-selector-label labelColl" for="time-selected">
-                <h4>Select time:</h4>
+                <h4>*Select time:</h4>
               </label>
               <input id="time-selected" type="time">
             </div>
@@ -181,8 +181,22 @@
 
             <div class="emailBooking">
               <a id="booking" class="booking" href="mailto:replaybristol@gmail.com">
-                <i class="fas fa-at"></i> Book a Table
+                <i class="fas fa-at"></i> Submit
               </a>
+            </div>
+          </div>
+
+          <div id="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p>No need to pay<span><i class="fas fa-times-circle close-modal"></i></span></p>
+              </div>
+              <div class="modal-body">
+                <p>You can play Ping-Pong for <strong>free <i class="far fa-laugh"></i> between Tuesday and Thursday</strong>.</p>
+              </div>
+              <div class="modal-footer">
+                <p class="close-modal">Great!</p>
+              </div>
             </div>
           </div>
         </div>

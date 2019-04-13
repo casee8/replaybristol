@@ -1,3 +1,4 @@
+// Store all the neccessary elements
 var amount        = document.querySelector('#amount'),
     person        = document.querySelector('#person'),
     session       = document.querySelector('#session'),
@@ -5,24 +6,60 @@ var amount        = document.querySelector('#amount'),
     dateSelected  = document.querySelector('#date-selected'),
     timeSelected  = document.querySelector('#time-selected'),
     firstName     = document.querySelector('#firstName'),
-    emailBtn      = document.querySelector('#booking');
+    emailBtn      = document.querySelector('#booking'),
+    closeModal    = document.querySelectorAll('.close-modal'),
+    modal         = document.querySelector('#modal'),
+    inputGroup    = document.querySelectorAll('.inputGroup');
 
-var boardGameCost = 2;
-var pingPongCost = 3;
+// Declare the costs
+var boardGameCost = 2,
+    pingPongCost  = 3;
 
-var inputGroup = document.querySelectorAll('.inputGroup');
+// Listen to changes an all input fields
 for(var i = 0; i < inputGroup.length; i++){
-  inputGroup[i].addEventListener('keyup', costCounter);
+  inputGroup[i].addEventListener('keyup', callTgthr);
 }
 
-dateSelected.addEventListener('change', costCounter);
+dateSelected.addEventListener('change', callTgthr);
 timeSelected.addEventListener('change', costCounter);
 
+function callTgthr() {
+  checkDate();
+  costCounter();
+}
+
+// Check the selected date (for free Ping-Pong) + modal
+function checkDate() {
+  var d = new Date(dateSelected.value);
+  var freeDays = [1, 2, 3, 4];
+
+  for(var i = 0; i < freeDays.length; i++) {
+    if(d.getDay() == freeDays[i]) {
+      pingPong.classList.add("free");
+      if(pingPong.value !== "") {
+        modal.style.display = 'block';
+      }
+      pingPong.value = "";
+      break;
+    } else {
+      pingPong.classList.remove("free");
+    }
+  }
+}
+
+// Close warning Modal
+for(var i = 0; i < closeModal.length; i++) {
+  closeModal[i].addEventListener('click', function(){
+    document.querySelector('#modal').style.display = 'none';
+  })
+}
+
+// Calculate the cost and make email subject
 function costCounter() {
   amount.innerText = (Number(person.value) * boardGameCost * Number(session.value)) + pingPongCost * Number(pingPong.value);
 
   var dateArray = dateSelected.value.split('-');
   var shortYear = dateArray[0].slice(2);
 
-  emailBtn.setAttribute("href", "mailto:replaybristol@gmail.com?subject=Booking for: " + firstName.value + " - " + Number(person.value) + " Person; NoS - " + Number(session.value) + "; Ping-Pong - " + Number(pingPong.value) + "; D-T: " + dateArray[2] + "." + dateArray[1] + "." + shortYear + " / " + timeSelected.value);
+  emailBtn.setAttribute("href", "mailto:replaybristol@gmail.com?subject=Booking for: " + firstName.value + " - " + Number(person.value) + " Person / " + Number(session.value) + " - Session / " + Number(pingPong.value) + " - Ping-Pong / D: " + dateArray[2] + "." + dateArray[1] + "." + shortYear + " / T: " + timeSelected.value);
 }
