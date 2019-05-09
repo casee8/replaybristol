@@ -8,8 +8,12 @@
 }
 
 body {
-  background: rgba(232, 104, 36, 0.1);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 0;
+}
+
+h1 {
+  color: #fff;
 }
 
 .mainContentLinks {
@@ -42,6 +46,7 @@ nav {
   font-size: 1.2em;
   margin: 10px 15px;
   color: #e86824 !important;
+  cursor: pointer;
 }
 
 /* Image */
