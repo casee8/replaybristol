@@ -1,3 +1,68 @@
+/* Modal */
+#modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.modal-content {
+  margin: calc(50vh - 100px) auto auto auto;
+  width: 250px;
+  box-shadow: 0 5px 8px 0 rgba(232, 104, 36, 0.1),
+              0 7px 20px 0 rgba(232, 104, 36, 0.3);
+  background: #fff;
+  font-size: 21px;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.modal-header, .modal-footer {
+  background: #e86824;
+  color: #fff;
+  width: 100%;
+}
+
+.modal-header > p {
+  font-weight: 600;
+  padding: 10px 5px;
+}
+
+.modal-header > p > span {
+  float: right;
+}
+
+.fa-times-circle {
+  position: relative;
+  top: -12px;
+}
+
+.modal-body {
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #000;
+}
+
+.modal-footer > p {
+  font-weight: 600;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.close-modal {
+  cursor: pointer;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 480px;
