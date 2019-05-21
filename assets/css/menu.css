@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+main {
+ font-size: 1.2rem;
+}
+
 h1 {
   padding-top: 35px;
   padding-bottom: 35px;
+  font-size: 32px;
 }
 
-table {
-  background: repeating-linear-gradient(#222, #000 25px, #222 28px);
-  border-spacing: 0;
-  color: #fff;
-  border: 4px solid #e86824;
-  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
-}
-
-.content, table {
+.content, .drink-menu, .food-menu {
   max-width: 480px;
   margin: auto auto 20px auto;
 }
@@ -34,16 +31,82 @@ table {
   font-weight: 700;
 }
 
-td {
-  padding: 0 10px 20px 10px;
+table {
+  -webkit-user-select: none; /* Disable "Tap to Search" in Chrome */
+  width: 100%;
   font-family: 'Indie Flower', cursive;
-  font-size: 1.2em;
 }
 
 th {
-  padding: 30px 0;
+  padding-top: 30px;
+}
+
+td:nth-child(2) {
+  text-align: right;
+}
+
+td {
+  padding: 5px;
+}
+
+.less-padding {
+  padding-bottom: 0;
+}
+
+.diff-padding {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.hover-item:hover {
+  color: #e86824;
+  text-shadow: 1px 1px 3px #fff;
+  font-weight: 700;
+}
+
+.food-menu {
+  margin-top: 15px;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(60deg, #30B2A8, #fff);
+  color: #000;
+}
+
+.drink-menu {
+  margin-top: 15px;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(60deg, #e86824, #fff);
+  color: #000;
+}
+
+.menu-logo {
+  padding: 20px 0;
+  max-width: 100%;
+}
+
+.menu-logo > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-logo > div > img {
+  height: 30px;
+  max-width: 100%;
+  margin-left: 15px;
+}
+
+.svg {
+  display: none;
+}
+
+.indie-f {
+  font-family: 'Indie Flower', cursive !important;
+}
+
+.price-quantity {
   font-family: 'Indie Flower', cursive;
-  font-size: 1.4em;
+  text-align: center;
 }
 
 /* ==================== Media Queries ==================== */
@@ -59,13 +122,6 @@ th {
   
   .content > p {
     color: #000;
-    font-size: 1.2em;
-    border: none;
-  }
-
-  table {
-    border: 4px solid #e86824;
-    font-size: 1.2em;
   }
 }
 
@@ -74,31 +130,93 @@ th {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .content, .content > p, .content > h1, table {
-    max-width: 70vw;
+  .content > p {
+    font-size: 1.3rem;
   }
 
-  .content > p {
-    font-size: 1.3em;
+  .content, .content > p, .content > h1, .food-menu, .drink-menu, table {
+    max-width: 70vw;
     margin: auto;
   }
 
-  table {
-    font-size: 1.4em;
+  td, th {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  th{
-    padding: 50px 0 40px 0;
+  .menu-group {
+    padding-bottom: 20px;
   }
 
-  td {
-    padding: 0 35px 25px 35px;
+  .content, .food-menu, .drink-menu {
+    margin: auto auto 20px auto;
   }
+
+  .food-menu, .drink-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: none;
+  }
+
+  .menu-logo, .third-food, .smoothie-menu {
+    background: #fff;
+  }
+
+  #margin-for-img {
+    margin-left: 15px;
+  }
+
+  .first-food, .second-food {
+    background: linear-gradient(60deg, #30B2A8, #fff);
+  }
+
+  .first-food {
+    padding-top: 30px;
+  }
+
+  .second-food {
+    padding-top: 55px;
+  }
+
+  .drink-menu-front {
+    padding-top: 20px;
+  }
+
+  .milkshake-menu > table {
+    padding-top: 80px;
+  }
+
+  .milkshake-menu, .cocktail-menu {
+    background: linear-gradient(60deg, #e86824, #fff);
+  }
+
+  .drink-menu-front {
+    display: grid !important;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+  }
+
+  .drink-menu-front > h3 {
+    padding: 20px 0;
+  }
+
+  .menu-logo > div > img {
+    margin-left: 0;
+  }
+  
+  .svg {
+    display: block;
+    height: 400px !important;
+    width: auto;
+    padding-top: 50px;
+  }
+
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .content, .content > h1, .content > p, table {
+  .content, .content > p, .content > h1, .food-menu, .drink-menu, table {
     max-width: 828px;
   }
 }
