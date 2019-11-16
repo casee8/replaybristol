@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Mali:400,700');
 
 * {
-  font-family: 'Mali', cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +9,7 @@
 body {
   background: rgba(0, 0, 0, 0.9);
   z-index: 0;
+  font-family: 'Mali', cursive;
 }
 
 h1 {
@@ -217,8 +217,8 @@ footer {
   }
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Large devices (laptops/desktops, 1080px and up) */
+@media only screen and (min-width: 1080px) {
   /* Navbar */
   .show, .fa-bars {
     display: none;

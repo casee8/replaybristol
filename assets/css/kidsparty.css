@@ -1,5 +1,4 @@
 
-
 /* ===== Content ===== */
 h1 {
   padding-top: 35px;
@@ -7,6 +6,11 @@ h1 {
   max-width: 480px;
   margin: auto;
   font-size: 32px;
+}
+
+h3 {
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .onlyString {
@@ -20,15 +24,18 @@ h1 {
   padding: 5px;
 }
 
-.center, .linkToCenter {
-  text-align: center;
-  padding: 5px;
-}
-
 .main-hr {
   border: 1px solid #e86824;
   max-width: 480px;
   margin: auto auto 20px auto;
+}
+
+.fa-star {
+  color: #e86824;
+}
+
+h3 {
+  text-align: center;
 }
 
 /* ==================== Media Queries ==================== */
@@ -43,10 +50,6 @@ h1 {
   }
 
   .onlyString > p {
-    padding: 10px;
-  }
-
-  .center, .linkToCenter {
     padding: 10px;
   }
 }
