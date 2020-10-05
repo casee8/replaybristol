@@ -172,15 +172,6 @@ footer {
   text-align: center;
 }
 
-.all-img {
-  filter: grayscale(1) blur(3px);
-}
-
-.turn-to-normal {
-  filter: none;
-  transition-duration: 1500ms;
-}
-
 /* ==================== Media Queries ==================== */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
