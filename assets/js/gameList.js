@@ -9,6 +9,7 @@ const gamesArray = [
   "Articulate!",
   "Azul",
   "Backbacker",
+  "Bandido",
   "Bang",
   "Bang! The dice game",
   "Battle of the Sexes",
