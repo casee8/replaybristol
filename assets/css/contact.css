@@ -51,7 +51,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
 
@@ -80,7 +80,7 @@ input[type=number] {
 .pingPongHeader {
   grid-area: 3/1/4/12;
   text-align: center;
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 .counter {
@@ -101,7 +101,19 @@ input[type=number] {
   justify-items: center;
 }
 
-#time-selected, #date-selected, #firstName {
+#checkB {
+  display: inline-block;
+}
+
+.checkB {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#time-selected,
+#date-selected,
+#firstName,
+#pNum {
   width: 135px;
   height: 21px;
 }
@@ -139,7 +151,8 @@ input[type=number] {
   width: 100%;
 }
 
-label, .label {
+label,
+.label {
   font-size: 0.8em;
 }
 
@@ -161,7 +174,7 @@ label, .label {
   margin: calc(50vh - 100px) auto auto auto;
   width: 250px;
   box-shadow: 0 5px 8px 0 rgba(232, 104, 36, 0.1),
-              0 7px 20px 0 rgba(232, 104, 36, 0.3);
+    0 7px 20px 0 rgba(232, 104, 36, 0.3);
   background: #fff;
   font-size: 21px;
   animation-name: modalopen;
@@ -169,11 +182,16 @@ label, .label {
 }
 
 @keyframes modalopen {
-  from {opacity: 0}
-  to {opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.modal-header, .modal-footer {
+.modal-header,
+.modal-footer {
   background: #e86824;
   color: #fff;
   width: 100%;
@@ -204,7 +222,9 @@ label, .label {
 }
 
 /* ===== Overall size and style ===== */
-.contact, .mail, .oTT-con {
+.contact,
+.mail,
+.oTT-con {
   max-width: 480px;
   background: #fff;
   box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.7);
@@ -274,14 +294,16 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-   main {
+  main {
     margin: 50px 0 0 0;
     padding: 0 0 20px 0;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
   }
 
-  .contact, .mail, .oTT-con {
+  .contact,
+  .mail,
+  .oTT-con {
     border: none;
     background: #fff;
     color: #000;
@@ -327,7 +349,9 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
     max-width: 70%;
   }
 
-  .contact, .mail, .oTT-con {
+  .contact,
+  .mail,
+  .oTT-con {
     max-width: 70%;
     font-size: 1.3em;
   }
@@ -347,12 +371,12 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
 
   .boardGameHeader {
     grid-area: 1/1/2/6;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 
   .pingPongHeader {
     grid-area: 1/6/2/12;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 
   .counter {
@@ -373,27 +397,41 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
   }
 
   .first-name-label {
-    grid-area: 1/1/2/3;
+    grid-area: 1/1/2/4;
   }
 
   #firstName {
-    grid-area: 1/3/2/12;
+    grid-area: 1/4/2/7;
+  }
+
+  .pNum-label {
+    grid-area: 2/1/3/4;
+  }
+
+  #pNum {
+    grid-area: 2/4/3/7;
+  }
+
+  .checkB {
+    grid-area: 2/7/3/12;
+    font-size: 0.8rem;
+    text-align: left;
   }
 
   .date-selector-label {
-    grid-area: 2/1/3/3; 
+    grid-area: 3/1/4/4;
   }
 
   #date-selected {
-    grid-area: 2/3/3/12;
+    grid-area: 3/4/4/7;
   }
 
   .time-selector-label {
-    grid-area: 3/1/4/3;
+    grid-area: 4/1/5/4;
   }
 
   #time-selected {
-    grid-area: 3/3/4/12;
+    grid-area: 4/4/5/7;
   }
 
   .main-hr {
@@ -405,7 +443,8 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
     grid-area: 5/2/6/11;
   }
 
-  #person, #session {
+  #person,
+  #session {
     width: 200px;
   }
 
@@ -416,11 +455,14 @@ body > main > div > div.oTT-con > table > tbody > tr > td:nth-child(1) {
   .emailBooking {
     grid-area: 7/2/8/11;
   }
-} 
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  h1, .contact, .mail, .oTT-con {
+  h1,
+  .contact,
+  .mail,
+  .oTT-con {
     max-width: 828px;
   }
 
