@@ -8,7 +8,7 @@ h1 {
   margin: auto;
 }
 
-.warning {
+/* .warning {
   max-width: 480px;
   background: #fff;
   color: #000;
@@ -22,7 +22,7 @@ h1 {
 
 .warning > p > i {
   color: #EE2F37;
-}
+} */
 
 .extra-space {
   margin-top: 10px;
